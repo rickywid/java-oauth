@@ -1,0 +1,23 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          github:
+            clientId: a4b9af48aa00e4e44a99
+            clientSecret: 927adbb61c7779cadfe541a16f4a135782f107cf
+
+  datasource:
+    password: password
+    url: jdbc:postgresql://localhost:5432/spring-registration
+    username: rickyjw
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    show-sql: false
+
